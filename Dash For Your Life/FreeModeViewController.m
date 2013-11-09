@@ -27,6 +27,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.mapView = [[MKMapView alloc] init];
+    self.mapView.frame = self.view.frame;
+    self.mapView.delegate = self;
+    [self.view addSubview:self.mapView];
 }
 
 - (void)didReceiveMemoryWarning

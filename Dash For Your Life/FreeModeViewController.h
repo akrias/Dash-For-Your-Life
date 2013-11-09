@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface FreeModeViewController : UIViewController
+@interface FreeModeViewController : UIViewController <MKMapViewDelegate>
 
+@property (strong, nonatomic) MKMapView *mapView;
 @end

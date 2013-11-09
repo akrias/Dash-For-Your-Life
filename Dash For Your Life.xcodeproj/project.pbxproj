@@ -29,11 +29,6 @@
 		BF6535F1182E4F0A00FFCD3F /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535F0182E4F0A00FFCD3F /* StatisticsViewController.m */; };
 		BF6535F4182E5D6200FFCD3F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535F3182E5D6200FFCD3F /* TableViewController.m */; };
 		F9FEDB58182E278900DB94EF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FEDB57182E278900DB94EF /* MapKit.framework */; };
-        F9FEDB4A182E219C00DB94EF /* Checkpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB49182E219C00DB94EF /* Checkpoint.m */; };
-		F9FEDB4D182E21C800DB94EF /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB4C182E21C800DB94EF /* Player.m */; };
-		F9FEDB50182E220100DB94EF /* Obstacle.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB4F182E220100DB94EF /* Obstacle.m */; };
-		F9FEDB53182E221D00DB94EF /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB52182E221D00DB94EF /* Item.m */; };
-		F9FEDB56182E22A800DB94EF /* Zombie.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB55182E22A800DB94EF /* Zombie.m */; };
 		F9FEDB5A182E9CFC00DB94EF /* Zombie_Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = F9FEDB59182E9CFC00DB94EF /* Zombie_Splash.png */; };
 /* End PBXBuildFile section */
 
