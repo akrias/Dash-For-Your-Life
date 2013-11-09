@@ -7,6 +7,7 @@
 //
 
 #import "SplashViewController.h"
+//#import "MenuViewController.h"
 
 @interface SplashViewController ()
 
@@ -28,16 +29,29 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = [UIColor whiteColor];
-    
     //sets an image
     UIImageView *image = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"zombie_splash.jpg"]];
     [image setContentMode:UIViewContentModeScaleAspectFill];
     
     image.frame = CGRectMake(0, 20, 320, 548);
     [self.view addSubview:image];
+    
+    
+    self.splashButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    self.splashButton.frame = CGRectMake(120, 480, 100, 44);
+    [self.splashButton setTitle:@"Tap to start!" forState:UIControlStateNormal];
+    [self.splashButton addTarget:self action:@selector(dismissSplashView:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.splashButton];
+
 }
+
+
+- (void)dismissSplashView:(UIButton *)sender
+{
+    self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 - (void)didReceiveMemoryWarning
 {

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "SplashViewController.h"
+#import "MenuViewController.h"
 
 @implementation AppDelegate
 
@@ -15,10 +15,12 @@
 {
     // Override point for customization after application launch.
 
-    SplashViewController *splashViewController = [[SplashViewController alloc] init];
-    
+    //set Menu View as root
+    MenuViewController *menuViewController = [[MenuViewController alloc] init];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = splashViewController;
+    self.window.rootViewController = menuViewController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

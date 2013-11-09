@@ -15,16 +15,21 @@
 		BF6535B7182E1B2C00FFCD3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535B6182E1B2C00FFCD3F /* AppDelegate.m */; };
 		BF6535BA182E1B2C00FFCD3F /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6535B8182E1B2C00FFCD3F /* Main_iPhone.storyboard */; };
 		BF6535BD182E1B2C00FFCD3F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6535BB182E1B2C00FFCD3F /* Main_iPad.storyboard */; };
-		BF6535C0182E1B2C00FFCD3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535BF182E1B2C00FFCD3F /* ViewController.m */; };
 		BF6535C2182E1B2C00FFCD3F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6535C1182E1B2C00FFCD3F /* Images.xcassets */; };
 		BF6535C9182E1B2C00FFCD3F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6535C8182E1B2C00FFCD3F /* XCTest.framework */; };
 		BF6535CA182E1B2C00FFCD3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6535A6182E1B2C00FFCD3F /* Foundation.framework */; };
 		BF6535CB182E1B2C00FFCD3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6535AA182E1B2C00FFCD3F /* UIKit.framework */; };
 		BF6535D3182E1B2C00FFCD3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF6535D1182E1B2C00FFCD3F /* InfoPlist.strings */; };
 		BF6535D5182E1B2C00FFCD3F /* Dash_For_Your_LifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535D4182E1B2C00FFCD3F /* Dash_For_Your_LifeTests.m */; };
-		F9FEDB58182E278900DB94EF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FEDB57182E278900DB94EF /* MapKit.framework */; };
 		BF6535E0182E212D00FFCD3F /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535DF182E212D00FFCD3F /* SplashViewController.m */; };
 		BF6535E2182E2FE800FFCD3F /* zombie_splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF6535E1182E2FE800FFCD3F /* zombie_splash.jpg */; };
+		BF6535E5182E3C3300FFCD3F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535E4182E3C3300FFCD3F /* MenuViewController.m */; };
+		BF6535E8182E4EBD00FFCD3F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535E7182E4EBD00FFCD3F /* SettingsViewController.m */; };
+		BF6535EB182E4EF300FFCD3F /* FreeModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535EA182E4EF300FFCD3F /* FreeModeViewController.m */; };
+		BF6535EE182E4F0000FFCD3F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535ED182E4F0000FFCD3F /* HelpViewController.m */; };
+		BF6535F1182E4F0A00FFCD3F /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535F0182E4F0A00FFCD3F /* StatisticsViewController.m */; };
+		BF6535F4182E5D6200FFCD3F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535F3182E5D6200FFCD3F /* TableViewController.m */; };
+		F9FEDB58182E278900DB94EF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FEDB57182E278900DB94EF /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,18 +55,28 @@
 		BF6535B6182E1B2C00FFCD3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BF6535B9182E1B2C00FFCD3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		BF6535BC182E1B2C00FFCD3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		BF6535BE182E1B2C00FFCD3F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BF6535BF182E1B2C00FFCD3F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BF6535C1182E1B2C00FFCD3F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BF6535C7182E1B2C00FFCD3F /* Dash For Your LifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dash For Your LifeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6535C8182E1B2C00FFCD3F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BF6535D0182E1B2C00FFCD3F /* Dash For Your LifeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dash For Your LifeTests-Info.plist"; sourceTree = "<group>"; };
 		BF6535D2182E1B2C00FFCD3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF6535D4182E1B2C00FFCD3F /* Dash_For_Your_LifeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dash_For_Your_LifeTests.m; sourceTree = "<group>"; };
-		F9FEDB57182E278900DB94EF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BF6535DE182E212D00FFCD3F /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		BF6535DF182E212D00FFCD3F /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		BF6535E1182E2FE800FFCD3F /* zombie_splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zombie_splash.jpg; path = ../../zombie_splash.jpg; sourceTree = "<group>"; };
+		BF6535E3182E3C3300FFCD3F /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		BF6535E4182E3C3300FFCD3F /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		BF6535E6182E4EBD00FFCD3F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		BF6535E7182E4EBD00FFCD3F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		BF6535E9182E4EF300FFCD3F /* FreeModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeModeViewController.h; sourceTree = "<group>"; };
+		BF6535EA182E4EF300FFCD3F /* FreeModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeModeViewController.m; sourceTree = "<group>"; };
+		BF6535EC182E4F0000FFCD3F /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		BF6535ED182E4F0000FFCD3F /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		BF6535EF182E4F0A00FFCD3F /* StatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsViewController.h; sourceTree = "<group>"; };
+		BF6535F0182E4F0A00FFCD3F /* StatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsViewController.m; sourceTree = "<group>"; };
+		BF6535F2182E5D6200FFCD3F /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		BF6535F3182E5D6200FFCD3F /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		F9FEDB57182E278900DB94EF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,10 +143,20 @@
 				BF6535B6182E1B2C00FFCD3F /* AppDelegate.m */,
 				BF6535DE182E212D00FFCD3F /* SplashViewController.h */,
 				BF6535DF182E212D00FFCD3F /* SplashViewController.m */,
+				BF6535E3182E3C3300FFCD3F /* MenuViewController.h */,
+				BF6535E4182E3C3300FFCD3F /* MenuViewController.m */,
+				BF6535F2182E5D6200FFCD3F /* TableViewController.h */,
+				BF6535F3182E5D6200FFCD3F /* TableViewController.m */,
+				BF6535E9182E4EF300FFCD3F /* FreeModeViewController.h */,
+				BF6535EA182E4EF300FFCD3F /* FreeModeViewController.m */,
+				BF6535E6182E4EBD00FFCD3F /* SettingsViewController.h */,
+				BF6535E7182E4EBD00FFCD3F /* SettingsViewController.m */,
+				BF6535EC182E4F0000FFCD3F /* HelpViewController.h */,
+				BF6535ED182E4F0000FFCD3F /* HelpViewController.m */,
+				BF6535EF182E4F0A00FFCD3F /* StatisticsViewController.h */,
+				BF6535F0182E4F0A00FFCD3F /* StatisticsViewController.m */,
 				BF6535B8182E1B2C00FFCD3F /* Main_iPhone.storyboard */,
 				BF6535BB182E1B2C00FFCD3F /* Main_iPad.storyboard */,
-				BF6535BE182E1B2C00FFCD3F /* ViewController.h */,
-				BF6535BF182E1B2C00FFCD3F /* ViewController.m */,
 				BF6535C1182E1B2C00FFCD3F /* Images.xcassets */,
 				BF6535AD182E1B2C00FFCD3F /* Supporting Files */,
 			);
@@ -266,10 +291,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF6535C0182E1B2C00FFCD3F /* ViewController.m in Sources */,
 				BF6535B7182E1B2C00FFCD3F /* AppDelegate.m in Sources */,
 				BF6535B3182E1B2C00FFCD3F /* main.m in Sources */,
+				BF6535F1182E4F0A00FFCD3F /* StatisticsViewController.m in Sources */,
+				BF6535E8182E4EBD00FFCD3F /* SettingsViewController.m in Sources */,
+				BF6535F4182E5D6200FFCD3F /* TableViewController.m in Sources */,
 				BF6535E0182E212D00FFCD3F /* SplashViewController.m in Sources */,
+				BF6535EB182E4EF300FFCD3F /* FreeModeViewController.m in Sources */,
+				BF6535E5182E3C3300FFCD3F /* MenuViewController.m in Sources */,
+				BF6535EE182E4F0000FFCD3F /* HelpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
