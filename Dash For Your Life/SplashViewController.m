@@ -20,7 +20,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        
+        [self.view setBackgroundColor:[UIColor whiteColor]];
     }
     return self;
 }
@@ -30,10 +30,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     //sets an image
-    UIImageView *image = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"zombie_splash.jpg"]];
-    [image setContentMode:UIViewContentModeScaleAspectFill];
+    UIImageView *image = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Zombie_Splash.png"]];
+    [image setContentMode:UIViewContentModeScaleAspectFit];
     
-    image.frame = CGRectMake(0, 20, 320, 548);
+    image.frame = CGRectMake(0, 20, 320, 568);
     [self.view addSubview:image];
     
     
