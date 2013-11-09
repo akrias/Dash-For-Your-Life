@@ -9,5 +9,20 @@
 #import <Foundation/Foundation.h>
 
 @interface Item : NSObject
+typedef enum{
+    LifeRecovery,
+    BonusPoints,
+    NoObstacles,
+    StopZombies,
+    SlowZombies,
+    DestroyZombies,
+    SpawnZombies
+} EffectType;
 
+@property double latitude;
+@property double longitude;
+@property EffectType effect;
+
+-(id)initWithLatitude:(double)aLatitude longitude:(double)aLongitude;
+-(void)setRandomEffect;
 @end
