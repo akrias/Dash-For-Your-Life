@@ -10,4 +10,23 @@
 
 @interface Obstacle : NSObject
 
+typedef enum{
+    PushUps,
+    SitUps,
+    Squats,
+    Lunges,
+    JumpingJacks,
+    ArmCircles,
+    MountainClimbers,
+    FastZombies
+} PunishmentType;
+
+@property double latitude;
+@property double longitude;
+@property PunishmentType punishment;
+@property int reps;  //number of exercise reps
+
+-(id)initWithLatitude:(double)aLatitude longitude:(double)aLongitude;
+-(void)setRandomExercise;
+
 @end
