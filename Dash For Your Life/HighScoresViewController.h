@@ -1,5 +1,5 @@
 //
-//  StatisticsViewController.h
+//  HighScoresViewController.h
 //  Dash For Your Life
 //
 //  Created by Vincent Woo on 11/9/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StatisticsViewController : UIViewController
+@interface HighScoresViewController : UIViewController
 
 @end

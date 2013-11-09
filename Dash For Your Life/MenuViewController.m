@@ -8,7 +8,7 @@
 
 #import "MenuViewController.h"
 #import "SplashViewController.h"
-#import "TableViewController.h"
+#import "MenuTableViewController.h"
 
 @interface MenuViewController ()
 
@@ -23,8 +23,8 @@
         // Custom initialization
         _splashFlag = NO;
         
-        self.tableViewController = [[TableViewController alloc] init];
-        [self pushViewController:self.tableViewController animated:YES];
+        self.menuTableViewController = [[MenuTableViewController alloc] init];
+        [self pushViewController:self.menuTableViewController animated:YES];
     }
     return self;
 }

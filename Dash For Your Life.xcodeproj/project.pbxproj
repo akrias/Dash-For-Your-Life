@@ -26,10 +26,20 @@
 		BF6535E8182E4EBD00FFCD3F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535E7182E4EBD00FFCD3F /* SettingsViewController.m */; };
 		BF6535EB182E4EF300FFCD3F /* FreeModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535EA182E4EF300FFCD3F /* FreeModeViewController.m */; };
 		BF6535EE182E4F0000FFCD3F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535ED182E4F0000FFCD3F /* HelpViewController.m */; };
-		BF6535F1182E4F0A00FFCD3F /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535F0182E4F0A00FFCD3F /* StatisticsViewController.m */; };
-		BF6535F4182E5D6200FFCD3F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535F3182E5D6200FFCD3F /* TableViewController.m */; };
 		BF6535F6182E9F3200FFCD3F /* zombie_splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF6535F5182E9F3200FFCD3F /* zombie_splash.jpg */; };
 		BF6535F9182EA23D00FFCD3F /* FreeModeParamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535F8182EA23D00FFCD3F /* FreeModeParamViewController.m */; };
+		BF6535FC182EAA3200FFCD3F /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535FB182EAA3200FFCD3F /* MenuTableViewController.m */; };
+		BF6535FF182EB10900FFCD3F /* StatisticsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535FE182EB10900FFCD3F /* StatisticsTableViewController.m */; };
+		BF653602182EB2E500FFCD3F /* PlayerStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF653601182EB2E500FFCD3F /* PlayerStatsViewController.m */; };
+		BF653605182EB2F800FFCD3F /* HighScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF653604182EB2F800FFCD3F /* HighScoresViewController.m */; };
+		BF653608182EB30B00FFCD3F /* AchievementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF653607182EB30B00FFCD3F /* AchievementsViewController.m */; };
+		BF65360E182EBFDE00FFCD3F /* AccordionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF65360D182EBFDE00FFCD3F /* AccordionView.m */; };
+		BF653611182EE3BA00FFCD3F /* HelpGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF653610182EE3BA00FFCD3F /* HelpGeneralViewController.m */; };
+		BF653614182EE3D000FFCD3F /* HelpObstaclesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF653613182EE3D000FFCD3F /* HelpObstaclesViewController.m */; };
+		BF653617182EE3DD00FFCD3F /* HelpZombiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF653616182EE3DD00FFCD3F /* HelpZombiesViewController.m */; };
+		BF65361A182EE3EA00FFCD3F /* HelpExercisesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF653619182EE3EA00FFCD3F /* HelpExercisesViewController.m */; };
+		BF65361D182EE3FA00FFCD3F /* HelpItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF65361C182EE3FA00FFCD3F /* HelpItemsViewController.m */; };
+		BF653620182EE40900FFCD3F /* HelpScoringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF65361F182EE40900FFCD3F /* HelpScoringViewController.m */; };
 		F9FEDB4A182E219C00DB94EF /* Checkpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB49182E219C00DB94EF /* Checkpoint.m */; };
 		F9FEDB4D182E21C800DB94EF /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB4C182E21C800DB94EF /* Player.m */; };
 		F9FEDB50182E220100DB94EF /* Obstacle.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB4F182E220100DB94EF /* Obstacle.m */; };
@@ -77,13 +87,33 @@
 		BF6535EA182E4EF300FFCD3F /* FreeModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeModeViewController.m; sourceTree = "<group>"; };
 		BF6535EC182E4F0000FFCD3F /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
 		BF6535ED182E4F0000FFCD3F /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
-		BF6535EF182E4F0A00FFCD3F /* StatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsViewController.h; sourceTree = "<group>"; };
-		BF6535F0182E4F0A00FFCD3F /* StatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsViewController.m; sourceTree = "<group>"; };
-		BF6535F2182E5D6200FFCD3F /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		BF6535F3182E5D6200FFCD3F /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		BF6535F5182E9F3200FFCD3F /* zombie_splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zombie_splash.jpg; path = ../zombie_splash.jpg; sourceTree = "<group>"; };
 		BF6535F7182EA23D00FFCD3F /* FreeModeParamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeModeParamViewController.h; sourceTree = "<group>"; };
 		BF6535F8182EA23D00FFCD3F /* FreeModeParamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeModeParamViewController.m; sourceTree = "<group>"; };
+		BF6535FA182EAA3200FFCD3F /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		BF6535FB182EAA3200FFCD3F /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		BF6535FD182EB10900FFCD3F /* StatisticsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsTableViewController.h; sourceTree = "<group>"; };
+		BF6535FE182EB10900FFCD3F /* StatisticsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsTableViewController.m; sourceTree = "<group>"; };
+		BF653600182EB2E500FFCD3F /* PlayerStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerStatsViewController.h; sourceTree = "<group>"; };
+		BF653601182EB2E500FFCD3F /* PlayerStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerStatsViewController.m; sourceTree = "<group>"; };
+		BF653603182EB2F800FFCD3F /* HighScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoresViewController.h; sourceTree = "<group>"; };
+		BF653604182EB2F800FFCD3F /* HighScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoresViewController.m; sourceTree = "<group>"; };
+		BF653606182EB30B00FFCD3F /* AchievementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementsViewController.h; sourceTree = "<group>"; };
+		BF653607182EB30B00FFCD3F /* AchievementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementsViewController.m; sourceTree = "<group>"; };
+		BF65360C182EBFDE00FFCD3F /* AccordionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccordionView.h; path = "../../../../Desktop/AccordionView-master/AccordionView.h"; sourceTree = "<group>"; };
+		BF65360D182EBFDE00FFCD3F /* AccordionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccordionView.m; path = "../../../../Desktop/AccordionView-master/AccordionView.m"; sourceTree = "<group>"; };
+		BF65360F182EE3BA00FFCD3F /* HelpGeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpGeneralViewController.h; sourceTree = "<group>"; };
+		BF653610182EE3BA00FFCD3F /* HelpGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpGeneralViewController.m; sourceTree = "<group>"; };
+		BF653612182EE3D000FFCD3F /* HelpObstaclesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpObstaclesViewController.h; sourceTree = "<group>"; };
+		BF653613182EE3D000FFCD3F /* HelpObstaclesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpObstaclesViewController.m; sourceTree = "<group>"; };
+		BF653615182EE3DD00FFCD3F /* HelpZombiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpZombiesViewController.h; sourceTree = "<group>"; };
+		BF653616182EE3DD00FFCD3F /* HelpZombiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpZombiesViewController.m; sourceTree = "<group>"; };
+		BF653618182EE3EA00FFCD3F /* HelpExercisesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpExercisesViewController.h; sourceTree = "<group>"; };
+		BF653619182EE3EA00FFCD3F /* HelpExercisesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpExercisesViewController.m; sourceTree = "<group>"; };
+		BF65361B182EE3FA00FFCD3F /* HelpItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpItemsViewController.h; sourceTree = "<group>"; };
+		BF65361C182EE3FA00FFCD3F /* HelpItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpItemsViewController.m; sourceTree = "<group>"; };
+		BF65361E182EE40900FFCD3F /* HelpScoringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpScoringViewController.h; sourceTree = "<group>"; };
+		BF65361F182EE40900FFCD3F /* HelpScoringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpScoringViewController.m; sourceTree = "<group>"; };
 		F9FEDB48182E219C00DB94EF /* Checkpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Checkpoint.h; path = Models/Checkpoint.h; sourceTree = "<group>"; };
 		F9FEDB49182E219C00DB94EF /* Checkpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Checkpoint.m; path = Models/Checkpoint.m; sourceTree = "<group>"; };
 		F9FEDB4B182E21C800DB94EF /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Models/Player.h; sourceTree = "<group>"; };
@@ -156,6 +186,8 @@
 		BF6535AC182E1B2C00FFCD3F /* Dash For Your Life */ = {
 			isa = PBXGroup;
 			children = (
+				BF65360C182EBFDE00FFCD3F /* AccordionView.h */,
+				BF65360D182EBFDE00FFCD3F /* AccordionView.m */,
 				BF6535F5182E9F3200FFCD3F /* zombie_splash.jpg */,
 				BF6535B5182E1B2C00FFCD3F /* AppDelegate.h */,
 				F9FEDB48182E219C00DB94EF /* Checkpoint.h */,
@@ -167,8 +199,8 @@
 				BF6535DF182E212D00FFCD3F /* SplashViewController.m */,
 				BF6535E3182E3C3300FFCD3F /* MenuViewController.h */,
 				BF6535E4182E3C3300FFCD3F /* MenuViewController.m */,
-				BF6535F2182E5D6200FFCD3F /* TableViewController.h */,
-				BF6535F3182E5D6200FFCD3F /* TableViewController.m */,
+				BF6535FA182EAA3200FFCD3F /* MenuTableViewController.h */,
+				BF6535FB182EAA3200FFCD3F /* MenuTableViewController.m */,
 				BF6535F7182EA23D00FFCD3F /* FreeModeParamViewController.h */,
 				BF6535F8182EA23D00FFCD3F /* FreeModeParamViewController.m */,
 				BF6535E9182E4EF300FFCD3F /* FreeModeViewController.h */,
@@ -177,8 +209,26 @@
 				BF6535E7182E4EBD00FFCD3F /* SettingsViewController.m */,
 				BF6535EC182E4F0000FFCD3F /* HelpViewController.h */,
 				BF6535ED182E4F0000FFCD3F /* HelpViewController.m */,
-				BF6535EF182E4F0A00FFCD3F /* StatisticsViewController.h */,
-				BF6535F0182E4F0A00FFCD3F /* StatisticsViewController.m */,
+				BF65360F182EE3BA00FFCD3F /* HelpGeneralViewController.h */,
+				BF653610182EE3BA00FFCD3F /* HelpGeneralViewController.m */,
+				BF653612182EE3D000FFCD3F /* HelpObstaclesViewController.h */,
+				BF653613182EE3D000FFCD3F /* HelpObstaclesViewController.m */,
+				BF653615182EE3DD00FFCD3F /* HelpZombiesViewController.h */,
+				BF653616182EE3DD00FFCD3F /* HelpZombiesViewController.m */,
+				BF653618182EE3EA00FFCD3F /* HelpExercisesViewController.h */,
+				BF653619182EE3EA00FFCD3F /* HelpExercisesViewController.m */,
+				BF65361B182EE3FA00FFCD3F /* HelpItemsViewController.h */,
+				BF65361C182EE3FA00FFCD3F /* HelpItemsViewController.m */,
+				BF65361E182EE40900FFCD3F /* HelpScoringViewController.h */,
+				BF65361F182EE40900FFCD3F /* HelpScoringViewController.m */,
+				BF6535FD182EB10900FFCD3F /* StatisticsTableViewController.h */,
+				BF6535FE182EB10900FFCD3F /* StatisticsTableViewController.m */,
+				BF653600182EB2E500FFCD3F /* PlayerStatsViewController.h */,
+				BF653601182EB2E500FFCD3F /* PlayerStatsViewController.m */,
+				BF653603182EB2F800FFCD3F /* HighScoresViewController.h */,
+				BF653604182EB2F800FFCD3F /* HighScoresViewController.m */,
+				BF653606182EB30B00FFCD3F /* AchievementsViewController.h */,
+				BF653607182EB30B00FFCD3F /* AchievementsViewController.m */,
 				BF6535B8182E1B2C00FFCD3F /* Main_iPhone.storyboard */,
 				BF6535BB182E1B2C00FFCD3F /* Main_iPad.storyboard */,
 				BF6535C1182E1B2C00FFCD3F /* Images.xcassets */,
@@ -321,21 +371,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF6535FC182EAA3200FFCD3F /* MenuTableViewController.m in Sources */,
+				BF653608182EB30B00FFCD3F /* AchievementsViewController.m in Sources */,
+				BF65361A182EE3EA00FFCD3F /* HelpExercisesViewController.m in Sources */,
 				F9FEDB56182E22A800DB94EF /* Zombie.m in Sources */,
 				F9FEDB4A182E219C00DB94EF /* Checkpoint.m in Sources */,
 				BF6535B7182E1B2C00FFCD3F /* AppDelegate.m in Sources */,
 				BF6535F9182EA23D00FFCD3F /* FreeModeParamViewController.m in Sources */,
+				BF653611182EE3BA00FFCD3F /* HelpGeneralViewController.m in Sources */,
 				BF6535B3182E1B2C00FFCD3F /* main.m in Sources */,
 				F9FEDB50182E220100DB94EF /* Obstacle.m in Sources */,
 				F9FEDB53182E221D00DB94EF /* Item.m in Sources */,
 				F9FEDB4D182E21C800DB94EF /* Player.m in Sources */,
-				BF6535F1182E4F0A00FFCD3F /* StatisticsViewController.m in Sources */,
+				BF653617182EE3DD00FFCD3F /* HelpZombiesViewController.m in Sources */,
+				BF653614182EE3D000FFCD3F /* HelpObstaclesViewController.m in Sources */,
+				BF653605182EB2F800FFCD3F /* HighScoresViewController.m in Sources */,
 				BF6535E8182E4EBD00FFCD3F /* SettingsViewController.m in Sources */,
-				BF6535F4182E5D6200FFCD3F /* TableViewController.m in Sources */,
 				BF6535E0182E212D00FFCD3F /* SplashViewController.m in Sources */,
+				BF6535FF182EB10900FFCD3F /* StatisticsTableViewController.m in Sources */,
+				BF653602182EB2E500FFCD3F /* PlayerStatsViewController.m in Sources */,
 				BF6535EB182E4EF300FFCD3F /* FreeModeViewController.m in Sources */,
 				BF6535E5182E3C3300FFCD3F /* MenuViewController.m in Sources */,
 				BF6535EE182E4F0000FFCD3F /* HelpViewController.m in Sources */,
+				BF65360E182EBFDE00FFCD3F /* AccordionView.m in Sources */,
+				BF65361D182EE3FA00FFCD3F /* HelpItemsViewController.m in Sources */,
+				BF653620182EE40900FFCD3F /* HelpScoringViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
