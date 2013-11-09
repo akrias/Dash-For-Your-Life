@@ -22,6 +22,8 @@
 		BF6535CB182E1B2C00FFCD3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6535AA182E1B2C00FFCD3F /* UIKit.framework */; };
 		BF6535D3182E1B2C00FFCD3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF6535D1182E1B2C00FFCD3F /* InfoPlist.strings */; };
 		BF6535D5182E1B2C00FFCD3F /* Dash_For_Your_LifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535D4182E1B2C00FFCD3F /* Dash_For_Your_LifeTests.m */; };
+		BF6535E0182E212D00FFCD3F /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535DF182E212D00FFCD3F /* SplashViewController.m */; };
+		BF6535E2182E2FE800FFCD3F /* zombie_splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF6535E1182E2FE800FFCD3F /* zombie_splash.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		BF6535D0182E1B2C00FFCD3F /* Dash For Your LifeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dash For Your LifeTests-Info.plist"; sourceTree = "<group>"; };
 		BF6535D2182E1B2C00FFCD3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF6535D4182E1B2C00FFCD3F /* Dash_For_Your_LifeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dash_For_Your_LifeTests.m; sourceTree = "<group>"; };
+		BF6535DE182E212D00FFCD3F /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		BF6535DF182E212D00FFCD3F /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		BF6535E1182E2FE800FFCD3F /* zombie_splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zombie_splash.jpg; path = ../../zombie_splash.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +119,11 @@
 		BF6535AC182E1B2C00FFCD3F /* Dash For Your Life */ = {
 			isa = PBXGroup;
 			children = (
+				BF6535E1182E2FE800FFCD3F /* zombie_splash.jpg */,
 				BF6535B5182E1B2C00FFCD3F /* AppDelegate.h */,
 				BF6535B6182E1B2C00FFCD3F /* AppDelegate.m */,
+				BF6535DE182E212D00FFCD3F /* SplashViewController.h */,
+				BF6535DF182E212D00FFCD3F /* SplashViewController.m */,
 				BF6535B8182E1B2C00FFCD3F /* Main_iPhone.storyboard */,
 				BF6535BB182E1B2C00FFCD3F /* Main_iPad.storyboard */,
 				BF6535BE182E1B2C00FFCD3F /* ViewController.h */,
@@ -235,6 +243,7 @@
 				BF6535C2182E1B2C00FFCD3F /* Images.xcassets in Resources */,
 				BF6535BA182E1B2C00FFCD3F /* Main_iPhone.storyboard in Resources */,
 				BF6535B1182E1B2C00FFCD3F /* InfoPlist.strings in Resources */,
+				BF6535E2182E2FE800FFCD3F /* zombie_splash.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +265,7 @@
 				BF6535C0182E1B2C00FFCD3F /* ViewController.m in Sources */,
 				BF6535B7182E1B2C00FFCD3F /* AppDelegate.m in Sources */,
 				BF6535B3182E1B2C00FFCD3F /* main.m in Sources */,
+				BF6535E0182E212D00FFCD3F /* SplashViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

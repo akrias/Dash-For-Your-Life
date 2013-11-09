@@ -7,12 +7,19 @@
 //
 
 #import "AppDelegate.h"
+#import "SplashViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+
+    SplashViewController *splashViewController = [[SplashViewController alloc] init];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = splashViewController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							
