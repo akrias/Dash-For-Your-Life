@@ -9,5 +9,11 @@
 #import "Checkpoint.h"
 
 @implementation Checkpoint
-
+-(id)initWithLatitude:(double)aLatitude longitude:(double)aLongitude
+{
+    self = [super init];
+    self.latitude = aLatitude;
+    self.longitude = aLongitude;
+    return self;
+}
 @end

@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Checkpoint : NSObject
-
+@property double latitude;
+@property double longitude;
+-(id)initWithLatitude:(double)aLatitude longitude:(double)aLongitude;
 @end
