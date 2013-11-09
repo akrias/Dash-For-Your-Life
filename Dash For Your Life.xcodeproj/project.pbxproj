@@ -22,6 +22,11 @@
 		BF6535CB182E1B2C00FFCD3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6535AA182E1B2C00FFCD3F /* UIKit.framework */; };
 		BF6535D3182E1B2C00FFCD3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF6535D1182E1B2C00FFCD3F /* InfoPlist.strings */; };
 		BF6535D5182E1B2C00FFCD3F /* Dash_For_Your_LifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535D4182E1B2C00FFCD3F /* Dash_For_Your_LifeTests.m */; };
+		F9FEDB4A182E219C00DB94EF /* Checkpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB49182E219C00DB94EF /* Checkpoint.m */; };
+		F9FEDB4D182E21C800DB94EF /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB4C182E21C800DB94EF /* Player.m */; };
+		F9FEDB50182E220100DB94EF /* Obstacle.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB4F182E220100DB94EF /* Obstacle.m */; };
+		F9FEDB53182E221D00DB94EF /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB52182E221D00DB94EF /* Item.m */; };
+		F9FEDB56182E22A800DB94EF /* Zombie.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB55182E22A800DB94EF /* Zombie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,16 @@
 		BF6535D0182E1B2C00FFCD3F /* Dash For Your LifeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dash For Your LifeTests-Info.plist"; sourceTree = "<group>"; };
 		BF6535D2182E1B2C00FFCD3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF6535D4182E1B2C00FFCD3F /* Dash_For_Your_LifeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dash_For_Your_LifeTests.m; sourceTree = "<group>"; };
+		F9FEDB48182E219C00DB94EF /* Checkpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Checkpoint.h; path = Models/Checkpoint.h; sourceTree = "<group>"; };
+		F9FEDB49182E219C00DB94EF /* Checkpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Checkpoint.m; path = Models/Checkpoint.m; sourceTree = "<group>"; };
+		F9FEDB4B182E21C800DB94EF /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Models/Player.h; sourceTree = "<group>"; };
+		F9FEDB4C182E21C800DB94EF /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = Models/Player.m; sourceTree = "<group>"; };
+		F9FEDB4E182E220100DB94EF /* Obstacle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Obstacle.h; path = Models/Obstacle.h; sourceTree = "<group>"; };
+		F9FEDB4F182E220100DB94EF /* Obstacle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Obstacle.m; path = Models/Obstacle.m; sourceTree = "<group>"; };
+		F9FEDB51182E221D00DB94EF /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = Models/Item.h; sourceTree = "<group>"; };
+		F9FEDB52182E221D00DB94EF /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = Models/Item.m; sourceTree = "<group>"; };
+		F9FEDB54182E22A800DB94EF /* Zombie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Zombie.h; path = Models/Zombie.h; sourceTree = "<group>"; };
+		F9FEDB55182E22A800DB94EF /* Zombie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Zombie.m; path = Models/Zombie.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +130,10 @@
 			isa = PBXGroup;
 			children = (
 				BF6535B5182E1B2C00FFCD3F /* AppDelegate.h */,
+				F9FEDB48182E219C00DB94EF /* Checkpoint.h */,
+				F9FEDB49182E219C00DB94EF /* Checkpoint.m */,
+				F9FEDB4B182E21C800DB94EF /* Player.h */,
+				F9FEDB4C182E21C800DB94EF /* Player.m */,
 				BF6535B6182E1B2C00FFCD3F /* AppDelegate.m */,
 				BF6535B8182E1B2C00FFCD3F /* Main_iPhone.storyboard */,
 				BF6535BB182E1B2C00FFCD3F /* Main_iPad.storyboard */,
@@ -122,6 +141,12 @@
 				BF6535BF182E1B2C00FFCD3F /* ViewController.m */,
 				BF6535C1182E1B2C00FFCD3F /* Images.xcassets */,
 				BF6535AD182E1B2C00FFCD3F /* Supporting Files */,
+				F9FEDB4E182E220100DB94EF /* Obstacle.h */,
+				F9FEDB4F182E220100DB94EF /* Obstacle.m */,
+				F9FEDB51182E221D00DB94EF /* Item.h */,
+				F9FEDB52182E221D00DB94EF /* Item.m */,
+				F9FEDB54182E22A800DB94EF /* Zombie.h */,
+				F9FEDB55182E22A800DB94EF /* Zombie.m */,
 			);
 			path = "Dash For Your Life";
 			sourceTree = "<group>";
@@ -254,8 +279,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF6535C0182E1B2C00FFCD3F /* ViewController.m in Sources */,
+				F9FEDB56182E22A800DB94EF /* Zombie.m in Sources */,
+				F9FEDB4A182E219C00DB94EF /* Checkpoint.m in Sources */,
 				BF6535B7182E1B2C00FFCD3F /* AppDelegate.m in Sources */,
 				BF6535B3182E1B2C00FFCD3F /* main.m in Sources */,
+				F9FEDB50182E220100DB94EF /* Obstacle.m in Sources */,
+				F9FEDB53182E221D00DB94EF /* Item.m in Sources */,
+				F9FEDB4D182E21C800DB94EF /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +504,7 @@
 				BF6535DA182E1B2C00FFCD3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF6535DB182E1B2C00FFCD3F /* Build configuration list for PBXNativeTarget "Dash For Your LifeTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +513,7 @@
 				BF6535DD182E1B2C00FFCD3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
