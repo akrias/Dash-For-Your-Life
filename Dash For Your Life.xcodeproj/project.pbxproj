@@ -22,6 +22,7 @@
 		BF6535CB182E1B2C00FFCD3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6535AA182E1B2C00FFCD3F /* UIKit.framework */; };
 		BF6535D3182E1B2C00FFCD3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF6535D1182E1B2C00FFCD3F /* InfoPlist.strings */; };
 		BF6535D5182E1B2C00FFCD3F /* Dash_For_Your_LifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535D4182E1B2C00FFCD3F /* Dash_For_Your_LifeTests.m */; };
+		F9FEDB58182E278900DB94EF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FEDB57182E278900DB94EF /* MapKit.framework */; };
 		F9FEDB4A182E219C00DB94EF /* Checkpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB49182E219C00DB94EF /* Checkpoint.m */; };
 		F9FEDB4D182E21C800DB94EF /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB4C182E21C800DB94EF /* Player.m */; };
 		F9FEDB50182E220100DB94EF /* Obstacle.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB4F182E220100DB94EF /* Obstacle.m */; };
@@ -60,6 +61,7 @@
 		BF6535D0182E1B2C00FFCD3F /* Dash For Your LifeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dash For Your LifeTests-Info.plist"; sourceTree = "<group>"; };
 		BF6535D2182E1B2C00FFCD3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF6535D4182E1B2C00FFCD3F /* Dash_For_Your_LifeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dash_For_Your_LifeTests.m; sourceTree = "<group>"; };
+		F9FEDB57182E278900DB94EF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F9FEDB48182E219C00DB94EF /* Checkpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Checkpoint.h; path = Models/Checkpoint.h; sourceTree = "<group>"; };
 		F9FEDB49182E219C00DB94EF /* Checkpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Checkpoint.m; path = Models/Checkpoint.m; sourceTree = "<group>"; };
 		F9FEDB4B182E21C800DB94EF /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Models/Player.h; sourceTree = "<group>"; };
