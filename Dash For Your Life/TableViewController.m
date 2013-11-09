@@ -7,6 +7,10 @@
 //
 
 #import "TableViewController.h"
+#import "FreeModeParamViewController.h"
+#import "SettingsViewController.h"
+#import "HelpViewController.h"
+#import "StatisticsViewController.h"
 
 @interface TableViewController ()
 
@@ -43,6 +47,31 @@
     cell.textLabel.text = self.menuOptions[indexPath.row];
     
     return cell;
+}
+
+//
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{    
+    if (indexPath.row == 0) {
+        FreeModeParamViewController *freeModeParamVC = [[FreeModeParamViewController alloc] init];
+        [self.navigationController pushViewController:freeModeParamVC animated:YES];
+    }
+    
+    else if (indexPath.row == 1) {
+        SettingsViewController *settingsVC = [[SettingsViewController alloc] init];
+        [self.navigationController pushViewController:settingsVC animated:YES];
+    }
+    
+    else if (indexPath.row == 2) {
+        HelpViewController *helpVC = [[HelpViewController alloc] init];
+        [self.navigationController pushViewController:helpVC animated:YES];
+    }
+
+    else if (indexPath.row == 3) {
+        StatisticsViewController *statisticsVC = [[StatisticsViewController alloc] init];
+        [self.navigationController pushViewController:statisticsVC animated:YES];
+    }
+
 }
 
 - (void)viewDidLoad

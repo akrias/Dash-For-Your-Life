@@ -1,18 +1,18 @@
 //
-//  FreeModeViewController.m
+//  FreeModeParamViewController.m
 //  Dash For Your Life
 //
 //  Created by Vincent Woo on 11/9/13.
 //  Copyright (c) 2013 Vivid. All rights reserved.
 //
 
-#import "FreeModeViewController.h"
+#import "FreeModeParamViewController.h"
 
-@interface FreeModeViewController ()
+@interface FreeModeParamViewController ()
 
 @end
 
-@implementation FreeModeViewController
+@implementation FreeModeParamViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,10 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
 	// Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = [UIColor grayColor];
+    self.view.backgroundColor = [UIColor yellowColor];
 }
 
 - (void)didReceiveMemoryWarning

@@ -22,19 +22,20 @@
 		BF6535D3182E1B2C00FFCD3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF6535D1182E1B2C00FFCD3F /* InfoPlist.strings */; };
 		BF6535D5182E1B2C00FFCD3F /* Dash_For_Your_LifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535D4182E1B2C00FFCD3F /* Dash_For_Your_LifeTests.m */; };
 		BF6535E0182E212D00FFCD3F /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535DF182E212D00FFCD3F /* SplashViewController.m */; };
-		BF6535E2182E2FE800FFCD3F /* zombie_splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF6535E1182E2FE800FFCD3F /* zombie_splash.jpg */; };
 		BF6535E5182E3C3300FFCD3F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535E4182E3C3300FFCD3F /* MenuViewController.m */; };
 		BF6535E8182E4EBD00FFCD3F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535E7182E4EBD00FFCD3F /* SettingsViewController.m */; };
 		BF6535EB182E4EF300FFCD3F /* FreeModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535EA182E4EF300FFCD3F /* FreeModeViewController.m */; };
 		BF6535EE182E4F0000FFCD3F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535ED182E4F0000FFCD3F /* HelpViewController.m */; };
 		BF6535F1182E4F0A00FFCD3F /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535F0182E4F0A00FFCD3F /* StatisticsViewController.m */; };
 		BF6535F4182E5D6200FFCD3F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535F3182E5D6200FFCD3F /* TableViewController.m */; };
-		F9FEDB58182E278900DB94EF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FEDB57182E278900DB94EF /* MapKit.framework */; };
+		BF6535F6182E9F3200FFCD3F /* zombie_splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF6535F5182E9F3200FFCD3F /* zombie_splash.jpg */; };
+		BF6535F9182EA23D00FFCD3F /* FreeModeParamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535F8182EA23D00FFCD3F /* FreeModeParamViewController.m */; };
 		F9FEDB4A182E219C00DB94EF /* Checkpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB49182E219C00DB94EF /* Checkpoint.m */; };
 		F9FEDB4D182E21C800DB94EF /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB4C182E21C800DB94EF /* Player.m */; };
 		F9FEDB50182E220100DB94EF /* Obstacle.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB4F182E220100DB94EF /* Obstacle.m */; };
 		F9FEDB53182E221D00DB94EF /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB52182E221D00DB94EF /* Item.m */; };
 		F9FEDB56182E22A800DB94EF /* Zombie.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB55182E22A800DB94EF /* Zombie.m */; };
+		F9FEDB58182E278900DB94EF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FEDB57182E278900DB94EF /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +69,6 @@
 		BF6535D4182E1B2C00FFCD3F /* Dash_For_Your_LifeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dash_For_Your_LifeTests.m; sourceTree = "<group>"; };
 		BF6535DE182E212D00FFCD3F /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		BF6535DF182E212D00FFCD3F /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
-		BF6535E1182E2FE800FFCD3F /* zombie_splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zombie_splash.jpg; path = ../../zombie_splash.jpg; sourceTree = "<group>"; };
 		BF6535E3182E3C3300FFCD3F /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		BF6535E4182E3C3300FFCD3F /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		BF6535E6182E4EBD00FFCD3F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
@@ -81,7 +81,9 @@
 		BF6535F0182E4F0A00FFCD3F /* StatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsViewController.m; sourceTree = "<group>"; };
 		BF6535F2182E5D6200FFCD3F /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		BF6535F3182E5D6200FFCD3F /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		F9FEDB57182E278900DB94EF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BF6535F5182E9F3200FFCD3F /* zombie_splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zombie_splash.jpg; path = ../zombie_splash.jpg; sourceTree = "<group>"; };
+		BF6535F7182EA23D00FFCD3F /* FreeModeParamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeModeParamViewController.h; sourceTree = "<group>"; };
+		BF6535F8182EA23D00FFCD3F /* FreeModeParamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeModeParamViewController.m; sourceTree = "<group>"; };
 		F9FEDB48182E219C00DB94EF /* Checkpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Checkpoint.h; path = Models/Checkpoint.h; sourceTree = "<group>"; };
 		F9FEDB49182E219C00DB94EF /* Checkpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Checkpoint.m; path = Models/Checkpoint.m; sourceTree = "<group>"; };
 		F9FEDB4B182E21C800DB94EF /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Models/Player.h; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		F9FEDB52182E221D00DB94EF /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = Models/Item.m; sourceTree = "<group>"; };
 		F9FEDB54182E22A800DB94EF /* Zombie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Zombie.h; path = Models/Zombie.h; sourceTree = "<group>"; };
 		F9FEDB55182E22A800DB94EF /* Zombie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Zombie.m; path = Models/Zombie.m; sourceTree = "<group>"; };
+		F9FEDB57182E278900DB94EF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +156,7 @@
 		BF6535AC182E1B2C00FFCD3F /* Dash For Your Life */ = {
 			isa = PBXGroup;
 			children = (
-				BF6535E1182E2FE800FFCD3F /* zombie_splash.jpg */,
+				BF6535F5182E9F3200FFCD3F /* zombie_splash.jpg */,
 				BF6535B5182E1B2C00FFCD3F /* AppDelegate.h */,
 				F9FEDB48182E219C00DB94EF /* Checkpoint.h */,
 				F9FEDB49182E219C00DB94EF /* Checkpoint.m */,
@@ -166,6 +169,8 @@
 				BF6535E4182E3C3300FFCD3F /* MenuViewController.m */,
 				BF6535F2182E5D6200FFCD3F /* TableViewController.h */,
 				BF6535F3182E5D6200FFCD3F /* TableViewController.m */,
+				BF6535F7182EA23D00FFCD3F /* FreeModeParamViewController.h */,
+				BF6535F8182EA23D00FFCD3F /* FreeModeParamViewController.m */,
 				BF6535E9182E4EF300FFCD3F /* FreeModeViewController.h */,
 				BF6535EA182E4EF300FFCD3F /* FreeModeViewController.m */,
 				BF6535E6182E4EBD00FFCD3F /* SettingsViewController.h */,
@@ -297,7 +302,7 @@
 				BF6535C2182E1B2C00FFCD3F /* Images.xcassets in Resources */,
 				BF6535BA182E1B2C00FFCD3F /* Main_iPhone.storyboard in Resources */,
 				BF6535B1182E1B2C00FFCD3F /* InfoPlist.strings in Resources */,
-				BF6535E2182E2FE800FFCD3F /* zombie_splash.jpg in Resources */,
+				BF6535F6182E9F3200FFCD3F /* zombie_splash.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,8 +321,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FEDB56182E22A800DB94EF /* Zombie.m in Sources */,
+				F9FEDB4A182E219C00DB94EF /* Checkpoint.m in Sources */,
 				BF6535B7182E1B2C00FFCD3F /* AppDelegate.m in Sources */,
+				BF6535F9182EA23D00FFCD3F /* FreeModeParamViewController.m in Sources */,
 				BF6535B3182E1B2C00FFCD3F /* main.m in Sources */,
+				F9FEDB50182E220100DB94EF /* Obstacle.m in Sources */,
+				F9FEDB53182E221D00DB94EF /* Item.m in Sources */,
+				F9FEDB4D182E21C800DB94EF /* Player.m in Sources */,
 				BF6535F1182E4F0A00FFCD3F /* StatisticsViewController.m in Sources */,
 				BF6535E8182E4EBD00FFCD3F /* SettingsViewController.m in Sources */,
 				BF6535F4182E5D6200FFCD3F /* TableViewController.m in Sources */,
