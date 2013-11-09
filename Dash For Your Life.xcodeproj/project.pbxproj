@@ -30,6 +30,11 @@
 		BF6535F1182E4F0A00FFCD3F /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535F0182E4F0A00FFCD3F /* StatisticsViewController.m */; };
 		BF6535F4182E5D6200FFCD3F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6535F3182E5D6200FFCD3F /* TableViewController.m */; };
 		F9FEDB58182E278900DB94EF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FEDB57182E278900DB94EF /* MapKit.framework */; };
+		F9FEDB4A182E219C00DB94EF /* Checkpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB49182E219C00DB94EF /* Checkpoint.m */; };
+		F9FEDB4D182E21C800DB94EF /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB4C182E21C800DB94EF /* Player.m */; };
+		F9FEDB50182E220100DB94EF /* Obstacle.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB4F182E220100DB94EF /* Obstacle.m */; };
+		F9FEDB53182E221D00DB94EF /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB52182E221D00DB94EF /* Item.m */; };
+		F9FEDB56182E22A800DB94EF /* Zombie.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB55182E22A800DB94EF /* Zombie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +82,16 @@
 		BF6535F2182E5D6200FFCD3F /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		BF6535F3182E5D6200FFCD3F /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		F9FEDB57182E278900DB94EF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F9FEDB48182E219C00DB94EF /* Checkpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Checkpoint.h; path = Models/Checkpoint.h; sourceTree = "<group>"; };
+		F9FEDB49182E219C00DB94EF /* Checkpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Checkpoint.m; path = Models/Checkpoint.m; sourceTree = "<group>"; };
+		F9FEDB4B182E21C800DB94EF /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Models/Player.h; sourceTree = "<group>"; };
+		F9FEDB4C182E21C800DB94EF /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = Models/Player.m; sourceTree = "<group>"; };
+		F9FEDB4E182E220100DB94EF /* Obstacle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Obstacle.h; path = Models/Obstacle.h; sourceTree = "<group>"; };
+		F9FEDB4F182E220100DB94EF /* Obstacle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Obstacle.m; path = Models/Obstacle.m; sourceTree = "<group>"; };
+		F9FEDB51182E221D00DB94EF /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = Models/Item.h; sourceTree = "<group>"; };
+		F9FEDB52182E221D00DB94EF /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = Models/Item.m; sourceTree = "<group>"; };
+		F9FEDB54182E22A800DB94EF /* Zombie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Zombie.h; path = Models/Zombie.h; sourceTree = "<group>"; };
+		F9FEDB55182E22A800DB94EF /* Zombie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Zombie.m; path = Models/Zombie.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +155,10 @@
 			children = (
 				BF6535E1182E2FE800FFCD3F /* zombie_splash.jpg */,
 				BF6535B5182E1B2C00FFCD3F /* AppDelegate.h */,
+				F9FEDB48182E219C00DB94EF /* Checkpoint.h */,
+				F9FEDB49182E219C00DB94EF /* Checkpoint.m */,
+				F9FEDB4B182E21C800DB94EF /* Player.h */,
+				F9FEDB4C182E21C800DB94EF /* Player.m */,
 				BF6535B6182E1B2C00FFCD3F /* AppDelegate.m */,
 				BF6535DE182E212D00FFCD3F /* SplashViewController.h */,
 				BF6535DF182E212D00FFCD3F /* SplashViewController.m */,
@@ -159,6 +178,12 @@
 				BF6535BB182E1B2C00FFCD3F /* Main_iPad.storyboard */,
 				BF6535C1182E1B2C00FFCD3F /* Images.xcassets */,
 				BF6535AD182E1B2C00FFCD3F /* Supporting Files */,
+				F9FEDB4E182E220100DB94EF /* Obstacle.h */,
+				F9FEDB4F182E220100DB94EF /* Obstacle.m */,
+				F9FEDB51182E221D00DB94EF /* Item.h */,
+				F9FEDB52182E221D00DB94EF /* Item.m */,
+				F9FEDB54182E22A800DB94EF /* Zombie.h */,
+				F9FEDB55182E22A800DB94EF /* Zombie.m */,
 			);
 			path = "Dash For Your Life";
 			sourceTree = "<group>";
