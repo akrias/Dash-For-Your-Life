@@ -67,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FEDB58182E278900DB94EF /* MapKit.framework in Frameworks */,
 				BF6535A9182E1B2C00FFCD3F /* CoreGraphics.framework in Frameworks */,
 				BF6535AB182E1B2C00FFCD3F /* UIKit.framework in Frameworks */,
 				BF6535A7182E1B2C00FFCD3F /* Foundation.framework in Frameworks */,
@@ -108,6 +109,7 @@
 		BF6535A5182E1B2C00FFCD3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F9FEDB57182E278900DB94EF /* MapKit.framework */,
 				BF6535A6182E1B2C00FFCD3F /* Foundation.framework */,
 				BF6535A8182E1B2C00FFCD3F /* CoreGraphics.framework */,
 				BF6535AA182E1B2C00FFCD3F /* UIKit.framework */,
@@ -484,6 +486,7 @@
 				BF6535DA182E1B2C00FFCD3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF6535DB182E1B2C00FFCD3F /* Build configuration list for PBXNativeTarget "Dash For Your LifeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +495,7 @@
 				BF6535DD182E1B2C00FFCD3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
