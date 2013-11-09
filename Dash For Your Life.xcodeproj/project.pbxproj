@@ -171,7 +171,7 @@
 				BF6535B8182E1B2C00FFCD3F /* Main_iPhone.storyboard */,
 				BF6535BB182E1B2C00FFCD3F /* Main_iPad.storyboard */,
 				BF6535C1182E1B2C00FFCD3F /* Images.xcassets */,
-				F9FEDB59182E9CFC00DB94EF /* Zombie_Splash.png */,
+                F9FEDB59182E9CFC00DB94EF /* Zombie_Splash.png */,
 				BF6535AD182E1B2C00FFCD3F /* Supporting Files */,
 				F9FEDB4E182E220100DB94EF /* Obstacle.h */,
 				F9FEDB4F182E220100DB94EF /* Obstacle.m */,
