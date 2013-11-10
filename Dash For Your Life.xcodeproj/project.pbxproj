@@ -40,6 +40,7 @@
 		BF653620182EE40900FFCD3F /* HelpScoringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF65361F182EE40900FFCD3F /* HelpScoringViewController.m */; };
 		F9955E66182EF4B4005280F4 /* PlayerProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = F9955E65182EF4B4005280F4 /* PlayerProfile.m */; };
 		F9955E68182F09FE005280F4 /* Zombie_Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = F9955E67182F09FE005280F4 /* Zombie_Splash.png */; };
+		F9955E6B182F377F005280F4 /* DestinationSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9955E6A182F377F005280F4 /* DestinationSelectorViewController.m */; };
 		F9FEDB4A182E219C00DB94EF /* Checkpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB49182E219C00DB94EF /* Checkpoint.m */; };
 		F9FEDB4D182E21C800DB94EF /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB4C182E21C800DB94EF /* Player.m */; };
 		F9FEDB50182E220100DB94EF /* Obstacle.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FEDB4F182E220100DB94EF /* Obstacle.m */; };
@@ -116,6 +117,8 @@
 		F9955E64182EF4B4005280F4 /* PlayerProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerProfile.h; path = Models/PlayerProfile.h; sourceTree = "<group>"; };
 		F9955E65182EF4B4005280F4 /* PlayerProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayerProfile.m; path = Models/PlayerProfile.m; sourceTree = "<group>"; };
 		F9955E67182F09FE005280F4 /* Zombie_Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Zombie_Splash.png; path = "Dash For Your Life/Zombie_Splash.png"; sourceTree = "<group>"; };
+		F9955E69182F377F005280F4 /* DestinationSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationSelectorViewController.h; sourceTree = "<group>"; };
+		F9955E6A182F377F005280F4 /* DestinationSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationSelectorViewController.m; sourceTree = "<group>"; };
 		F9FEDB48182E219C00DB94EF /* Checkpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Checkpoint.h; path = Models/Checkpoint.h; sourceTree = "<group>"; };
 		F9FEDB49182E219C00DB94EF /* Checkpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Checkpoint.m; path = Models/Checkpoint.m; sourceTree = "<group>"; };
 		F9FEDB4B182E21C800DB94EF /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Models/Player.h; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 				BF6535FB182EAA3200FFCD3F /* MenuTableViewController.m */,
 				BF6535F7182EA23D00FFCD3F /* FreeModeParamViewController.h */,
 				BF6535F8182EA23D00FFCD3F /* FreeModeParamViewController.m */,
+				F9955E69182F377F005280F4 /* DestinationSelectorViewController.h */,
+				F9955E6A182F377F005280F4 /* DestinationSelectorViewController.m */,
 				BF6535E9182E4EF300FFCD3F /* FreeModeViewController.h */,
 				BF6535EA182E4EF300FFCD3F /* FreeModeViewController.m */,
 				BF6535E6182E4EBD00FFCD3F /* SettingsViewController.h */,
@@ -393,6 +398,7 @@
 				BF653605182EB2F800FFCD3F /* HighScoresViewController.m in Sources */,
 				BF6535E8182E4EBD00FFCD3F /* SettingsViewController.m in Sources */,
 				BF6535E0182E212D00FFCD3F /* SplashViewController.m in Sources */,
+				F9955E6B182F377F005280F4 /* DestinationSelectorViewController.m in Sources */,
 				BF6535FF182EB10900FFCD3F /* StatisticsTableViewController.m in Sources */,
 				BF653602182EB2E500FFCD3F /* PlayerStatsViewController.m in Sources */,
 				BF6535EB182E4EF300FFCD3F /* FreeModeViewController.m in Sources */,
