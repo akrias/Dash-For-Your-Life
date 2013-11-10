@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HighScoresViewController : UIViewController
+
+@interface HighScoresViewController : UIPageViewController
+
+@property (strong, nonatomic) UIPageViewController *pageController;
+
+
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "SplashViewController.h"
+#import "QuartzCore/QuartzCore.h"
+
 //#import "MenuViewController.h"
 
 @interface SplashViewController ()
@@ -36,10 +38,13 @@
     image.frame = CGRectMake(0, 20, 320, 568);
     [self.view addSubview:image];
     
+    UILabel *splashMsg = [[UILabel alloc] initWithFrame:CGRectMake(120, 60, 120, 30)];
+    splashMsg.text = @"Tap to start!";
+    [self.view addSubview:splashMsg];
     
-    self.splashButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    self.splashButton.frame = CGRectMake(120, 480, 100, 44);
-    [self.splashButton setTitle:@"Tap to start!" forState:UIControlStateNormal];
+    
+    self.splashButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.splashButton.frame = image.frame;
     [self.splashButton addTarget:self action:@selector(dismissSplashView:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.splashButton];
 

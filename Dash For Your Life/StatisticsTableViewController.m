@@ -10,6 +10,7 @@
 #import "PlayerStatsViewController.h"
 #import "HighScoresViewController.h"
 #import "AchievementsViewController.h"
+#import "HighScoreTier1ViewController.h"
 
 @interface StatisticsTableViewController ()
 
@@ -57,7 +58,11 @@
     }
     
     else if (indexPath.row == 1) {
+        //NSArray *viewControllers = [NSArray ];
         HighScoresViewController *highScoresVC = [[HighScoresViewController alloc] init];
+        
+        //[highScoresVC setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+ 
         [self.navigationController pushViewController:highScoresVC animated:YES];
     }
     
@@ -74,6 +79,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.title = @"Statistics";
+
 }
 
 - (void)didReceiveMemoryWarning
