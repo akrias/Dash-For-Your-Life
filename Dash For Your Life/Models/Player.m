@@ -17,12 +17,15 @@
 -(id)initWithLatitude:(double)aLatitude longitude:(double)aLongitude
 {
     self = [super init];
-    self.latitude = aLatitude;
-    self.longitude = aLongitude;
-    self.hitPoints = 100;
-    self.cumulatedScore = 0;
-    self.distanceTravelled = 0;
-    self.timeSinceStart = 0;
+    if(self)
+    {
+        self.latitude = aLatitude;
+        self.longitude = aLongitude;
+        self.hitPoints = 100;
+        self.cumulatedScore = 0;
+        self.distanceTravelled = 0;
+        self.timeSinceStart = 0;
+    }
     return self;
 }
 

@@ -13,7 +13,8 @@
 @property int hitPoints;
 @property int cumulatedScore;
 @property double distanceTravelled;  //in meters
-@property double timeSinceStart;  //in milliseconds
+@property int timeSinceStart;  //in milliseconds
+@property int mileTime;
 @property double latitude;
 @property double longitude;
 
