@@ -11,6 +11,8 @@
 #import "Checkpoint.h"
 #import "Player.h"
 #import "Obstacle.h"
+#import "PlayerProfile.h"
+#import "Zombie.h"
 
 @interface FreeModeViewController : UIViewController <MKMapViewDelegate>
 
@@ -19,7 +21,11 @@
 @property (strong, nonatomic) Checkpoint *safehouse;
 @property (strong, nonatomic) Player *player;
 @property (strong, nonatomic) Obstacle *currObstacle;
-@property (strong, nonatomic) NSArray *zombies;
+@property (strong, nonatomic) Zombie *currZombie;
 @property (strong, nonatomic) NSArray *items;
+@property double remainingDistanceUntilZombie;
+@property double remainingDistanceUntilObstacle;
+@property (strong, nonatomic) PlayerProfile *profile;
+@property (strong, nonatomic) CLLocation *goal;
 
 @end
