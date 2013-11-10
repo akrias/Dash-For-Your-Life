@@ -21,4 +21,9 @@
 {
     self.punishment = (PunishmentType) (arc4random() % 7);  //chooses a random exercise punishment(does not include FastZombies)
 }
+
++(double)getDistanceUntilNextObstacle
+{
+    return (drand48() * 0.1) + 0.2;
+}
 @end

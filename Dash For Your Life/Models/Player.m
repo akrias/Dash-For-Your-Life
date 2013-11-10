@@ -9,18 +9,12 @@
 #import "Player.h"
 
 @implementation Player
--(id)init
-{
-    return [self initWithLatitude:0 longitude:0];
-}
-
--(id)initWithLatitude:(double)aLatitude longitude:(double)aLongitude
+-(id)initWithCoordinate:(CLLocationCoordinate2D)aCoordinate
 {
     self = [super init];
     if(self)
     {
-        self.latitude = aLatitude;
-        self.longitude = aLongitude;
+        self.coordinate = aCoordinate;
         self.hitPoints = 100;
         self.cumulatedScore = 0;
         self.distanceTravelled = 0;
