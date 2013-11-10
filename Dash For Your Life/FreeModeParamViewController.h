@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PlayerProfile.h"
 
-@interface FreeModeParamViewController : UIViewController
-
+@interface FreeModeParamViewController : UIViewController <UITextFieldDelegate>
+@property (strong, nonatomic)UITextField *mileTimeField;
+@property (strong, nonatomic)PlayerProfile *profile;
+@property (strong, nonatomic)UILabel *mileTimeLabel;
+@property (strong, nonatomic)UIButton *setSafehouse;
+@property (strong, nonatomic)UIButton *startButton;
 @end

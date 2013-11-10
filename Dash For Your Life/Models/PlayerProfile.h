@@ -11,7 +11,7 @@
 @interface PlayerProfile : NSObject <NSCoding>
 @property double totalDistanceTravelled; // in meters
 @property double topSpeed; // in meters per second?
-@property double derivedMileTime;
+@property int derivedMileTime; // in milliseconds
 @property int numberOfZombiesEscaped;
 @property int numberOfObstaclesPassed;
 @property int numberOfWins;
