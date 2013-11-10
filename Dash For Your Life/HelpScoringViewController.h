@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HelpScoringViewController : UIViewController
+@property (strong, nonatomic) UIScrollView *scrollView;
 
 @end
