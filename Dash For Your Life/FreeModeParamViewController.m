@@ -10,6 +10,7 @@
 #import "PlayerProfile.h"
 #import "Checkpoint.h"
 #import "DestinationSelectorViewController.h"
+#import "FreeModeViewController.h"
 
 @interface FreeModeParamViewController ()
 
@@ -70,6 +71,7 @@
     self.startButton.backgroundColor = [UIColor whiteColor];
     [self.startButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.startButton setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
+    [self.startButton addTarget:self action:@selector(startGame) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.startButton];
 }
 
@@ -85,9 +87,34 @@
 -(void)pushDVC
 {
     self.destinationSelectorVC = [[DestinationSelectorViewController alloc] init];
+    self.safehouse = [[Checkpoint alloc] init];
+    self.home = [[Checkpoint alloc] init];
+    self.destinationSelectorVC.safeHouse = self.safehouse;
+    self.destinationSelectorVC.home = self.home;
     [self.navigationController pushViewController:self.destinationSelectorVC animated:YES];
 }
 
+-(void)startGame
+{
+    self.freeModeVC = [[FreeModeViewController alloc] init];
+    self.freeModeVC.safehouse = self.safehouse;
+    self.freeModeVC.home = self.home;
+    [self.navigationController pushViewController:self.freeModeVC animated:YES];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    if(self.safehouse != nil)
+    {
+        [self.setSafehouse setTitle:[NSString
+                   stringWithFormat:@"Safehouse at: %.2f, %.2f",self.safehouse.coordinate.latitude, self.safehouse.coordinate.longitude]
+                           forState:UIControlStateNormal];
+        if(self.profile.derivedMileTime > 0)
+        {
+            self.startButton.enabled = YES;
+        }
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

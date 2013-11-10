@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
 @interface Player : NSObject
 
@@ -15,8 +16,7 @@
 @property double distanceTravelled;  //in meters
 @property int timeSinceStart;  //in milliseconds
 @property int mileTime;
-@property double latitude;
-@property double longitude;
+@property (nonatomic) CLLocationCoordinate2D coordinate;
 
--(id)initWithLatitude:(double)aLatitude longitude:(double)aLongitude;
+-(id)initWithCoordinate:(CLLocationCoordinate2D)aCoordinate;
 @end

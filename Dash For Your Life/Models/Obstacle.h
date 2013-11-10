@@ -29,4 +29,5 @@ typedef enum{
 -(id)initWithLatitude:(double)aLatitude longitude:(double)aLongitude;
 -(void)setRandomExercise;
 
++(double)getDistanceUntilNextObstacle;
 @end

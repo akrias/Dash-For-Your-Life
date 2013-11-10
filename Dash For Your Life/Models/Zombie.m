@@ -9,14 +9,16 @@
 #import "Zombie.h"
 
 @implementation Zombie
--(id)initWithLatitude:(double)aLatitude longitude:(double)aLongitude speed:(double)aSpeed maxDistance:(double)aDistance
+-(id)initWithLevel:(int)level coordinate:(CLLocationCoordinate2D)coordinate
 {
     self = [super init];
-    self.latitude = aLatitude;
-    self.longitude = aLongitude;
-    self.speed = aSpeed;
-    self.maxDistanceFromPlayer = aDistance;
-    self.distanceFromPlayer = 10;
+    if(self)
+    {
+        self.speed = [Zombie getRandomAtLevel:level];
+        self.timeTilExpire = 20000;
+        self.lastUpdate = CACurrentMediaTime();
+        self.coordinate = coordinate;
+    }
     return self;
 }
 
