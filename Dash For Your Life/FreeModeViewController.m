@@ -141,6 +141,7 @@
         }
         
         self.currObstacle = [[Obstacle alloc] initWithLatitude:userLocation.coordinate.latitude + deltaLat longitude:userLocation.coordinate.longitude + deltaLng];
+        [self.currObstacle setRandomExercise];
         self.remainingDistanceUntilObstacle = [Obstacle getDistanceUntilNextObstacle];
     }
     //test for zombie spawn
