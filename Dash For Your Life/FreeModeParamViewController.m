@@ -9,6 +9,7 @@
 #import "FreeModeParamViewController.h"
 #import "PlayerProfile.h"
 #import "Checkpoint.h"
+#import "DestinationSelectorViewController.h"
 
 @interface FreeModeParamViewController ()
 
@@ -58,6 +59,7 @@
     [self.setSafehouse setTitle:@"SetDestination" forState:UIControlStateNormal];
     self.setSafehouse.backgroundColor = [UIColor whiteColor];
     [self.setSafehouse setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.setSafehouse addTarget:self action:@selector(pushDVC) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.setSafehouse];
     
     //start
@@ -78,6 +80,12 @@
     [PlayerProfile saveProfile:self.profile];
     [textField resignFirstResponder];
     return YES;
+}
+
+-(void)pushDVC
+{
+    self.destinationSelectorVC = [[DestinationSelectorViewController alloc] init];
+    [self.navigationController pushViewController:self.destinationSelectorVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

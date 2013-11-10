@@ -34,27 +34,27 @@
     
 	// Do any additional setup after loading the view.
     self.mapView = [[MKMapView alloc] init];
-    self.mapView.frame = self.view.frame;
+    self.mapView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
     self.mapView.delegate = self;
     double maxLat, minLat, maxLng, minLng;
-    if(self.home.latitude > self.safehouse.latitude){
-        maxLat = self.home.latitude;
-        minLat = self.safehouse.latitude;
+    if(self.home.coordinate.latitude > self.safehouse.coordinate.latitude){
+        maxLat = self.home.coordinate.latitude;
+        minLat = self.safehouse.coordinate.latitude;
     }
     else
     {
-        maxLat = self.safehouse.latitude;
-        minLat = self.home.latitude;
+        maxLat = self.safehouse.coordinate.latitude;
+        minLat = self.home.coordinate.latitude;
     }
-    if(self.home.longitude > self.safehouse.longitude)
+    if(self.home.coordinate.longitude > self.safehouse.coordinate.longitude)
     {
-        maxLng = self.home.longitude;
-        minLng = self.safehouse.longitude;
+        maxLng = self.home.coordinate.longitude;
+        minLng = self.safehouse.coordinate.longitude;
     }
     else
     {
-        maxLng = self.safehouse.longitude;
-        minLng = self.home.longitude;
+        maxLng = self.safehouse.coordinate.longitude;
+        minLng = self.home.coordinate.longitude;
     }
     CLLocationCoordinate2D boundsCenter = CLLocationCoordinate2DMake((maxLat + minLat) / 2, (maxLng + minLng) / 2);
     MKCoordinateSpan boundsSpan = MKCoordinateSpanMake(maxLat - minLat, maxLng - minLng);

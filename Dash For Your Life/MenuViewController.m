@@ -40,8 +40,6 @@
     
 }
 
-
-
 - (void)viewDidLayoutSubviews
 {
     if(!_splashFlag) {

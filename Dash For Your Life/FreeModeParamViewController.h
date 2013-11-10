@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PlayerProfile.h"
+#import "DestinationSelectorViewController.h"
 
 @interface FreeModeParamViewController : UIViewController <UITextFieldDelegate>
 @property (strong, nonatomic)UITextField *mileTimeField;
@@ -15,4 +16,5 @@
 @property (strong, nonatomic)UILabel *mileTimeLabel;
 @property (strong, nonatomic)UIButton *setSafehouse;
 @property (strong, nonatomic)UIButton *startButton;
+@property (strong, nonatomic)DestinationSelectorViewController * destinationSelectorVC;
 @end
