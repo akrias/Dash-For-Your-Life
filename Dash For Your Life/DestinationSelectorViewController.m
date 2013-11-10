@@ -33,7 +33,11 @@
     self.mapView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
     self.mapView.delegate = self;
     self.mapView.showsUserLocation = YES;
-    
+    CLLocationCoordinate2D startCenter = CLLocationCoordinate2DMake(7, 22);
+    CLLocationDistance regionWidth = 3000;
+    CLLocationDistance regionHeight = 3000;
+    MKCoordinateRegion startRegion =MKCoordinateRegionMakeWithDistance(startCenter, regionWidth, regionHeight);
+    [self.mapView setRegion:startRegion];
     [self.view addSubview:self.mapView];
     
     UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPressGesture:)];
@@ -48,13 +52,11 @@
     }
     else
     {
-        // Here we get the CGPoint for the touch and convert it to latitude and longitude coordinates to display on the map
         CGPoint point = [sender locationInView:self.mapView];
         CLLocationCoordinate2D locCoord = [self.mapView convertPoint:point toCoordinateFromView:self.mapView];
-        // Then all you have to do is create the annotation and add it to the map
-        Checkpoint *dropPin = [[Checkpoint alloc] init];
-        dropPin.coordinate = CLLocationCoordinate2DMake(locCoord.latitude,locCoord.longitude);
-        [self.mapView addAnnotation:dropPin];
+        self.safeHouse.coordinate = CLLocationCoordinate2DMake(locCoord.latitude,locCoord.longitude);
+        [self.mapView addAnnotation:self.safeHouse];
+        [self.navigationController popViewControllerAnimated:YES];
     }
 }
 
@@ -62,23 +64,10 @@
 {
     if(!self.hasSetCenter){
         [mapView setCenterCoordinate:userLocation.coordinate animated:NO];
-        self.safeHouse = [[Checkpoint alloc] init];
-        self.safeHouse.coordinate = userLocation.coordinate;
-        [self.mapView addAnnotation:self.safeHouse];
-        [[mapView viewForAnnotation:self.safeHouse] setDraggable:YES];
         self.hasSetCenter = YES;
     }
 }
--(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view didChangeDragState:(MKAnnotationViewDragState)newState fromOldState:(MKAnnotationViewDragState)oldState
-{
-    if (newState == MKAnnotationViewDragStateEnding)
-    {
-        CLLocationCoordinate2D droppedAt = view.annotation.coordinate;
-        NSLog(@"dropped at %f,%f", droppedAt.latitude, droppedAt.longitude);
-    }
 
-    
-}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

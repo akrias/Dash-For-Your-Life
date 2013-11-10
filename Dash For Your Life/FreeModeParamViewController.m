@@ -85,9 +85,24 @@
 -(void)pushDVC
 {
     self.destinationSelectorVC = [[DestinationSelectorViewController alloc] init];
+    self.safehouse = [[Checkpoint alloc] init];
+    self.destinationSelectorVC.safeHouse = self.safehouse;
     [self.navigationController pushViewController:self.destinationSelectorVC animated:YES];
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    if(self.safehouse != nil)
+    {
+        [self.setSafehouse setTitle:[NSString
+                   stringWithFormat:@"Safehouse at: %.2f, %.2f",self.safehouse.coordinate.latitude, self.safehouse.coordinate.longitude]
+                           forState:UIControlStateNormal];
+        if(self.profile.derivedMileTime > 0)
+        {
+            self.startButton.enabled = YES;
+        }
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
