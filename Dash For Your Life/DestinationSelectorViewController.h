@@ -13,5 +13,5 @@
 @interface DestinationSelectorViewController : UIViewController <MKMapViewDelegate>
 @property (strong, nonatomic)MKMapView *mapView;
 @property (strong, nonatomic)Checkpoint *safeHouse;
-@property BOOL hasSetCenter;
+@property (strong, nonatomic)Checkpoint *home;
 @end

@@ -20,7 +20,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.hasSetCenter = NO;
     }
     return self;
 }
@@ -28,16 +27,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Pick a Spot";
 	// Do any additional setup after loading the view.
     self.mapView = [[MKMapView alloc] init];
     self.mapView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
     self.mapView.delegate = self;
     self.mapView.showsUserLocation = YES;
-    CLLocationCoordinate2D startCenter = CLLocationCoordinate2DMake(7, 22);
-    CLLocationDistance regionWidth = 3000;
-    CLLocationDistance regionHeight = 3000;
-    MKCoordinateRegion startRegion =MKCoordinateRegionMakeWithDistance(startCenter, regionWidth, regionHeight);
-    [self.mapView setRegion:startRegion];
+    if(self.mapView.userLocation != nil){
+        CLLocationDistance regionWidth = 3000;
+        CLLocationDistance regionHeight = 3000;
+        MKCoordinateRegion startRegion =MKCoordinateRegionMakeWithDistance(self.mapView.userLocation.coordinate, regionWidth, regionHeight);
+        [self.mapView setRegion:startRegion];
+        self.home.coordinate = self.mapView.userLocation.coordinate;
+    }
     [self.view addSubview:self.mapView];
     
     UILongPressGestureRecognizer *longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPressGesture:)];
@@ -62,9 +64,12 @@
 
 -(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
-    if(!self.hasSetCenter){
-        [mapView setCenterCoordinate:userLocation.coordinate animated:NO];
-        self.hasSetCenter = YES;
+    if(self.home == nil){
+        CLLocationDistance regionWidth = 3000;
+        CLLocationDistance regionHeight = 3000;
+        MKCoordinateRegion startRegion =MKCoordinateRegionMakeWithDistance(userLocation.coordinate, regionWidth, regionHeight);
+        [self.mapView setRegion:startRegion];
+        self.home.coordinate = userLocation.coordinate;
     }
 }
 
