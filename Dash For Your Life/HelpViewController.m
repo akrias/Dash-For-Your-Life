@@ -7,7 +7,6 @@
 //
 
 #import "HelpViewController.h"
-#import "AccordionView.h"
 
 #import "HelpGeneralViewController.h"
 #import "HelpObstaclesViewController.h"
