@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HelpItemsViewController : UIViewController
+@property (strong, nonatomic) UIScrollView *scrollView;
 
 @end

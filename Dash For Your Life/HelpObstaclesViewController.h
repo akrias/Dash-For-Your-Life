@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HelpObstaclesViewController : UIViewController
+@property (strong, nonatomic) UIScrollView *scrollView;
 
 @end

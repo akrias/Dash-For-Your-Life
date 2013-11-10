@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HelpZombiesViewController : UIViewController
+@property (strong, nonatomic) UIScrollView *scrollView;
 
 @end
