@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
-@interface Checkpoint : NSObject
-@property double latitude;
-@property double longitude;
+@interface Checkpoint : NSObject <MKAnnotation>
+@property (nonatomic)CLLocationCoordinate2D coordinate;
 -(id)initWithLatitude:(double)aLatitude longitude:(double)aLongitude;
 @end
