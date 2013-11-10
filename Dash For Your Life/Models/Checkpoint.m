@@ -12,8 +12,8 @@
 -(id)initWithLatitude:(double)aLatitude longitude:(double)aLongitude
 {
     self = [super init];
-    self.latitude = aLatitude;
-    self.longitude = aLongitude;
+    self.coordinate = CLLocationCoordinate2DMake(aLatitude, aLongitude);
     return self;
 }
+
 @end
