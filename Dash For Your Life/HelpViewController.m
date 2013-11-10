@@ -58,6 +58,8 @@
 //cells linking to respective view controllers
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    
     if (indexPath.row == 0) {
         HelpGeneralViewController *helpGeneralVC = [[HelpGeneralViewController alloc] init];
         [self.navigationController pushViewController:helpGeneralVC animated:YES];
@@ -97,7 +99,7 @@
 	// Do any additional setup after loading the view.
     
     //self.view.backgroundColor = [UIColor grayColor];
-    
+    self.title = @"Help";
 }
 
 - (void)didReceiveMemoryWarning
