@@ -1,18 +1,18 @@
 //
-//  StatisticsViewController.m
+//  HelpGeneralViewController.m
 //  Dash For Your Life
 //
 //  Created by Vincent Woo on 11/9/13.
 //  Copyright (c) 2013 Vivid. All rights reserved.
 //
 
-#import "StatisticsViewController.h"
+#import "HelpGeneralViewController.h"
 
-@interface StatisticsViewController ()
+@interface HelpGeneralViewController ()
 
 @end
 
-@implementation StatisticsViewController
+@implementation HelpGeneralViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,8 +27,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = [UIColor redColor];
 }
 
 - (void)didReceiveMemoryWarning

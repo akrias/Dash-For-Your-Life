@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TableViewController.h"
+#import "MenuTableViewController.h"
 
 @interface MenuViewController : UINavigationController {
     BOOL _splashFlag;
 }
 
-@property (strong, nonatomic) TableViewController *tableViewController;
+@property (strong, nonatomic) MenuTableViewController *menuTableViewController;
 
 
 @end

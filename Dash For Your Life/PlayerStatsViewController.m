@@ -1,18 +1,18 @@
 //
-//  SettingsViewController.m
+//  PlayerStatsViewController.m
 //  Dash For Your Life
 //
 //  Created by Vincent Woo on 11/9/13.
 //  Copyright (c) 2013 Vivid. All rights reserved.
 //
 
-#import "SettingsViewController.h"
+#import "PlayerStatsViewController.h"
 
-@interface SettingsViewController ()
+@interface PlayerStatsViewController ()
 
 @end
 
-@implementation SettingsViewController
+@implementation PlayerStatsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,9 +27,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = [UIColor blueColor];
-    self.title = @"Settings";
+    self.view.backgroundColor = [UIColor purpleColor];
 }
 
 - (void)didReceiveMemoryWarning

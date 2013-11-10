@@ -1,18 +1,18 @@
 //
-//  SettingsViewController.m
+//  HelpZombiesViewController.m
 //  Dash For Your Life
 //
 //  Created by Vincent Woo on 11/9/13.
 //  Copyright (c) 2013 Vivid. All rights reserved.
 //
 
-#import "SettingsViewController.h"
+#import "HelpZombiesViewController.h"
 
-@interface SettingsViewController ()
+@interface HelpZombiesViewController ()
 
 @end
 
-@implementation SettingsViewController
+@implementation HelpZombiesViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,9 +27,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = [UIColor blueColor];
-    self.title = @"Settings";
+    self.view.backgroundColor = [UIColor yellowColor];
 }
 
 - (void)didReceiveMemoryWarning

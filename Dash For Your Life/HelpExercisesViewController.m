@@ -1,18 +1,18 @@
 //
-//  SettingsViewController.m
+//  HelpExercisesViewController.m
 //  Dash For Your Life
 //
 //  Created by Vincent Woo on 11/9/13.
 //  Copyright (c) 2013 Vivid. All rights reserved.
 //
 
-#import "SettingsViewController.h"
+#import "HelpExercisesViewController.h"
 
-@interface SettingsViewController ()
+@interface HelpExercisesViewController ()
 
 @end
 
-@implementation SettingsViewController
+@implementation HelpExercisesViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,9 +27,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = [UIColor blueColor];
-    self.title = @"Settings";
+    self.view.backgroundColor = [UIColor greenColor];
 }
 
 - (void)didReceiveMemoryWarning
