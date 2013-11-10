@@ -8,8 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "Checkpoint.h"
+#import "Player.h"
+#import "Obstacle.h"
 
 @interface FreeModeViewController : UIViewController <MKMapViewDelegate>
 
 @property (strong, nonatomic) MKMapView *mapView;
+@property (strong, nonatomic) Checkpoint *home;  //need to set Checkpoints before push onto navigation stack
+@property (strong, nonatomic) Checkpoint *safehouse;
+@property (strong, nonatomic) Player *player;
+@property (strong, nonatomic) Obstacle *currObstacle;
+@property (strong, nonatomic) NSArray *zombies;
+@property (strong, nonatomic) NSArray *items;
+
 @end
