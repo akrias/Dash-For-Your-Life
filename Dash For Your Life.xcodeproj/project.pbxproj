@@ -119,6 +119,7 @@
 		F9955E67182F09FE005280F4 /* Zombie_Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Zombie_Splash.png; path = "Dash For Your Life/Zombie_Splash.png"; sourceTree = "<group>"; };
 		F9955E69182F377F005280F4 /* DestinationSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationSelectorViewController.h; sourceTree = "<group>"; };
 		F9955E6A182F377F005280F4 /* DestinationSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationSelectorViewController.m; sourceTree = "<group>"; };
+		F9955E6C182F73D4005280F4 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		F9FEDB48182E219C00DB94EF /* Checkpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Checkpoint.h; path = Models/Checkpoint.h; sourceTree = "<group>"; };
 		F9FEDB49182E219C00DB94EF /* Checkpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Checkpoint.m; path = Models/Checkpoint.m; sourceTree = "<group>"; };
 		F9FEDB4B182E21C800DB94EF /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Models/Player.h; sourceTree = "<group>"; };
@@ -180,6 +181,7 @@
 		BF6535A5182E1B2C00FFCD3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F9955E6C182F73D4005280F4 /* EventKitUI.framework */,
 				F9FEDB57182E278900DB94EF /* MapKit.framework */,
 				BF6535A6182E1B2C00FFCD3F /* Foundation.framework */,
 				BF6535A8182E1B2C00FFCD3F /* CoreGraphics.framework */,

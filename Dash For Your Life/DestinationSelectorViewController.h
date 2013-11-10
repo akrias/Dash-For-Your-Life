@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "Checkpoint.h"
 
-@interface DestinationSelectorViewController : UIViewController
-
+@interface DestinationSelectorViewController : UIViewController <MKMapViewDelegate>
+@property (strong, nonatomic)MKMapView *mapView;
+@property (strong, nonatomic)Checkpoint *safeHouse;
+@property BOOL hasSetCenter;
 @end
