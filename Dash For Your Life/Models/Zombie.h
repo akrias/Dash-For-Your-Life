@@ -8,19 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
-
-@interface Zombie : NSObject <MKAnnotation> 
+@interface Zombie : NSObject <MKAnnotation>{
+    NSArray *zombieLevels;
+}
 @property double speed; // in meters per millisecond
-@property double distanceFromPlayer; // in meters
-@property double maxDistanceFromPlayer; // in meters
-@property CLLocationCoordinate2D coordinate;
-@property double latitude;
-@property double longitude;
+@property double timeTilExpire;
+@property double lastUpdate;
+@property (nonatomic) CLLocationCoordinate2D coordinate;
 
-
-
-
--(id)initWithLatitude:(double)aLatitude longitude:(double)aLongitude speed:(double)aSpeed maxDistance:(double)aDistance;
-
--(id)initRandomZombieWithLevel:(int)level coordinate:(CLLocationCoordinate2D)aCoordinate;
+-(id)initWithLevel:(int)level coordinate:(CLLocationCoordinate2D) coordinate;
+-(BOOL)didZombieCatchPlayerAtLocation:(CLLocation *)playerLocation;
++(double)getDistanceUntilNextZombie;
++(double)getRandomAtLevel:(int) level;
++(NSArray *)getZombieLevels;
 @end

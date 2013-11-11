@@ -22,43 +22,52 @@
     return self;
 }
 
-/*
--(id)initRandomZombieWithLevel:(int)level coordinate:(CLLocationCoordinate2D)aCoordinate
+-(BOOL)didZombieCatchPlayerAtLocation:(CLLocation *)playerLocation
 {
-    double lowSpeed = 0;
-    double highSpeed = 0;
-    
-    double avgSpeed = 0;
-    
-    //tier 14:00 - 15:00
-    if(level == 0) {
-        lowSpeed = 1.79;
-        highSpeed = 1.92;
-        avgSpeed = (lowSpeed + highSpeed) / 2;
-        
+    double currTime = CACurrentMediaTime();
+    double initialDistanceFromPlayer = [[[CLLocation alloc] initWithLatitude:self.coordinate.latitude longitude:self.coordinate.longitude ] distanceFromLocation:playerLocation];
+    double distTravelled = (currTime - self.lastUpdate) * self.speed;
+    self.lastUpdate = currTime;
+    if(initialDistanceFromPlayer <= distTravelled)
+    {
+        return YES;
     }
-    
-    //tier 13:00 - 14:00
-    else if(level == 1) {
-        lowSpeed = 1.92;
-        highSpeed = 2.06;
-        avgSpeed = (lowSpeed + highSpeed) / 2;
-        
+    else
+    {
+        double latToPlayer = playerLocation.coordinate.latitude - self.coordinate.latitude;
+        double lngToPlayer = playerLocation.coordinate.longitude - self.coordinate.longitude;
+        double deltaLat = distTravelled / initialDistanceFromPlayer * latToPlayer;
+        double deltaLng = distTravelled / initialDistanceFromPlayer * lngToPlayer;
+        self.coordinate = CLLocationCoordinate2DMake(self.coordinate.latitude + deltaLat, self.coordinate.longitude + deltaLng);
+        return NO;
     }
-    
-    
-    
-    NSArray *minSpeedArray = @[@1.79,@1.92,@2.06,@2.24,@2.44,@2.68,@2.98,@3.35,@3.83,@4.47];
-    NSArray *maxSpeedArray = @[@1.92,@2.06,@2.24,@2.44,@2.68,@2.98,@3.35,@3.83,@4.47,@5.36];
-    
+}
 
-    
-    
-    
-    
-    
-}*/
++(double)getDistanceUntilNextZombie
+{
+    return (drand48() * 0.3) + 0.1;
+}
 
++(double)getRandomAtLevel:(int)level
+{
+    int randomSelector = arc4random() % 8;
+    if(randomSelector < 1)
+    {
+        return [[Zombie getZombieLevels][level][2] doubleValue];
+    }
+    else if(randomSelector < 5)
+    {
+        return [[Zombie getZombieLevels][level][1] doubleValue];
+    }
+    else
+    {
+        return [[Zombie getZombieLevels][level][0] doubleValue];
+    }
+}
 
-
++(NSArray *)getZombieLevels
+{
+    return @[@[@4.47, @4.88, @5.36], @[@3.83, @4.13, @4.47], @[@3.35, @3.58, @3.83], @[@2.98, @3.16, @3.35], @[@2.68, @2.82, @2.98],
+             @[@2.44, @2.55, @2.68], @[@2.24, @2.33, @2.44], @[@2.06, @2.15, @2.24], @[@1.92, @1.99, @2.06], @[@1.79, @1.85, @1.92]];
+}
 @end
